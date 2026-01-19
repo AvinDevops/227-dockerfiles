@@ -3,5 +3,6 @@ FROM almalinux:${version:-9}
 ARG COURSE=DevOps
 ARG TRAINER=Avinash
 ARG DURATION=120hrs
+ENV DURATION=${DURATION}
 RUN echo "Course is: ${COURSE}, Trainer is: ${TRAINER}, Duration is: ${DURATION}"
 CMD ["sleep", "100"]
